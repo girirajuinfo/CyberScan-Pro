@@ -227,7 +227,6 @@ git push
 - Add URL input field.
 - Validate website URLs.
 - Build the first website scanning feature.
-- Display scan results on the webpage.
 
 -----------------------------------------------------------------------------------------------------------------
 
