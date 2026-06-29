@@ -139,3 +139,92 @@ The CyberScan Pro development environment is fully prepared. The project is vers
 
 -------------------------------------------------------------------------------------------------
 
+# Day 1 – Flask Web Application Development
+
+**Date:** 29 June 2026
+
+## Objective
+Build the first working version of CyberScan Pro using Flask and understand the basics of web application development.
+
+---
+
+## Tasks Completed
+
+- Learned the basics of Flask.
+- Created the first Flask application (`app.py`).
+- Created the first route (`/`).
+- Connected Flask with HTML templates.
+- Created `base.html` using template inheritance.
+- Created `index.html` for the homepage.
+- Linked CSS using Flask static files.
+- Designed a basic CyberScan Pro homepage.
+- Added navigation bar and footer.
+- Styled the webpage using CSS.
+- Successfully ran the Flask development server.
+- Tested the application in the browser.
+
+---
+
+## Files Created / Updated
+
+- app.py
+- templates/base.html
+- templates/index.html
+- static/css/style.css
+
+---
+
+## Concepts Learned
+
+- Flask Framework
+- Web Server
+- Routing
+- HTML Templates
+- Template Inheritance
+- Static Files
+- CSS Styling
+- Request and Response Cycle
+
+---
+
+## Result
+
+Successfully created the first working CyberScan Pro web application. The homepage loads correctly in the browser with a navigation bar, content section, button, and footer.
+
+---
+
+## Challenges Faced
+
+- Understanding Flask routing.
+- Learning template inheritance.
+- Linking CSS correctly.
+- Designing the first webpage.
+
+---
+
+## Skills Gained
+
+- Flask Basics
+- HTML
+- CSS
+- Web Application Structure
+- Frontend and Backend Connection
+
+---
+
+## Git Commands Used
+
+git add .
+
+git commit -m "Day 1: Build Flask homepage with template inheritance"
+
+git push
+
+---
+
+## Next Day Plan
+
+- Add URL input field.
+- Validate website URLs.
+- Build the first website scanning feature.
+- Display scan results on the webpage.
