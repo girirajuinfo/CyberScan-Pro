@@ -27,7 +27,47 @@
 
     </div>
 
-    <button>Start Security Scan</button>
+    <form action="/" method="POST">
+
+    <input
+        type="text"
+        name="website"
+        placeholder="https://example.com"
+        required>
+
+    <br><br>
+
+    <button type="submit">
+        Start Security Scan
+    </button>
+
+</form>
+
+{% if result %}
+
+<hr>
+
+<h3>Scan Result</h3>
+
+<p><strong>Website:</strong> {{ result.website }}</p>
+
+<p><strong>Status:</strong> {{ result.status }}</p>
+
+{% if result.status == 200 %}
+
+<p style="color:green;">
+    ✅ {{ result.message }}
+</p>
+
+{% else %}
+
+<p style="color:red;">
+    ❌ {{ result.message }}
+</p>
+
+{% endif %}
+
+{% endif %}
 
 </section>
 
