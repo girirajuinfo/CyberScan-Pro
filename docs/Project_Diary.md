@@ -136,3 +136,6 @@ The CyberScan Pro development environment is fully prepared. The project is vers
 * Run the application on the local development server.
 * Understand routing and templates.
 * Push the first working version to GitHub.
+
+-------------------------------------------------------------------------------------------------
+

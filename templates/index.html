@@ -1,15 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberScan Pro</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-    <h1>Welcome to CyberScan Pro</h1>
+{% block content %}
 
-    <p>My first Flask application is running successfully.</p>
+<section class="hero">
 
-</body>
-</html>
+    <h2>🛡️ CyberScan Pro</h2>
+
+    <h3>Professional Automated Web Security Scanner</h3>
+
+    <p>
+        Analyze websites for common security configurations and
+        generate professional security reports.
+    </p>
+
+    <div class="features">
+
+        <div>✔ Security Headers Analysis</div>
+
+        <div>✔ SSL Certificate Verification</div>
+
+        <div>✔ Port Scanner</div>
+
+        <div>✔ robots.txt Checker</div>
+
+        <div>✔ sitemap.xml Checker</div>
+
+    </div>
+
+    <button>Start Security Scan</button>
+
+</section>
+
+{% endblock %}
