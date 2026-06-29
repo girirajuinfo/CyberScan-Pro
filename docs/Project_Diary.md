@@ -228,3 +228,101 @@ git push
 - Validate website URLs.
 - Build the first website scanning feature.
 - Display scan results on the webpage.
+
+-----------------------------------------------------------------------------------------------------------------
+
+# Day 2 – Website Connectivity Scanner
+
+**Date:** 30 June 2026
+
+## Objective
+Develop the first functional scanning feature by allowing users to enter a website URL, validating the input, checking website availability, and displaying results on the webpage.
+
+---
+
+## Tasks Completed
+
+- Added HTML form for website URL input.
+- Implemented POST request handling in Flask.
+- Captured user input using Flask request object.
+- Connected Python with HTML templates using Jinja2.
+- Used the Requests library to connect to websites.
+- Retrieved HTTP status codes.
+- Displayed scan results on the webpage.
+- Implemented exception handling for:
+  - Invalid URLs
+  - Connection errors
+  - Request timeouts
+- Improved the user experience with friendly error messages.
+
+---
+
+## Files Updated
+
+- app.py
+- templates/index.html
+
+---
+
+## Concepts Learned
+
+- HTML Forms
+- GET vs POST Requests
+- Flask Request Object
+- Requests Library
+- HTTP Status Codes
+- Jinja2 Template Variables
+- Conditional Rendering
+- Exception Handling (try/except)
+
+---
+
+## Result
+
+CyberScan Pro can now:
+
+- Accept website URLs.
+- Validate user input.
+- Connect to live websites.
+- Detect whether a website is reachable.
+- Display HTTP status codes.
+- Show success and error messages without crashing.
+
+---
+
+## Challenges Faced
+
+- Understanding POST requests.
+- Reading form data in Flask.
+- Handling invalid URLs.
+- Managing connection errors gracefully.
+
+---
+
+## Skills Gained
+
+- Flask Backend Development
+- Dynamic HTML Rendering
+- HTTP Communication
+- Python Requests Library
+- Error Handling
+- Basic Web Security Scanner Development
+
+---
+
+## Git Commands Used
+
+git add .
+
+git commit -m "Day 2: Implement URL validation and website availability scanner"
+
+git push
+
+---
+
+## Next Day Plan
+
+- Learn HTTP Headers.
+- Build the Security Headers Scanner.
+- Detect missing security headers.
+- Display security analysis results.
