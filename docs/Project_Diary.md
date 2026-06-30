@@ -325,3 +325,132 @@ git push
 - Build the Security Headers Scanner.
 - Detect missing security headers.
 - Display security analysis results.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# 📅 Day 3 – HTTP Security Headers Scanner
+
+**Date:** 29 June 2026
+
+## Objective
+
+The objective of Day 3 was to transform CyberScan Pro from a website availability checker into a real web security assessment tool by implementing an HTTP Security Headers Scanner.
+
+---
+
+## Work Completed
+
+### 1. Created a Modular Scanner Structure
+
+Created a dedicated Python package named `scanner` to organize the scanning modules.
+
+Created files:
+
+* scanner/**init**.py
+* scanner/headers.py
+
+This separates the scanning logic from the Flask application and follows a professional project structure.
+
+---
+
+### 2. Implemented Security Header Scanner
+
+Implemented a new function `check_security_headers()` inside `headers.py`.
+
+The scanner checks for the following important HTTP security headers:
+
+* Content-Security-Policy
+* Strict-Transport-Security
+* X-Frame-Options
+* X-Content-Type-Options
+* Referrer-Policy
+* Permissions-Policy
+
+Each header is marked as either **Present** or **Missing**.
+
+---
+
+### 3. Integrated Scanner with Flask
+
+Imported the scanner module into `app.py`.
+
+After the website responds successfully, CyberScan Pro automatically performs a security header analysis and stores the results inside the result dictionary.
+
+---
+
+### 4. Updated Frontend
+
+Modified `templates/index.html` to display a new section named **Security Header Analysis**.
+
+Implemented a dynamic HTML table using Jinja2 that displays:
+
+* Security Header Name
+* Status (Present / Missing)
+
+---
+
+### 5. Tested the Scanner
+
+Successfully scanned:
+
+https://google.com
+
+Verified:
+
+* Website connectivity
+* HTTP Status Code
+* Security Header Analysis
+* Dynamic result rendering
+
+The scanner successfully displayed the detected security headers on the web interface.
+
+---
+
+## Concepts Learned
+
+* Python Packages
+* Modular Project Structure
+* Python Modules
+* Importing Custom Functions
+* HTTP Response Headers
+* Security Header Analysis
+* Flask Integration
+* Jinja2 Loops
+* Dynamic HTML Tables
+* Dictionary Iteration
+
+---
+
+## Challenges Faced
+
+* Organizing scanner modules correctly.
+* Importing functions from another Python file.
+* Displaying dictionary data inside HTML.
+* Understanding HTTP security headers.
+
+All issues were successfully resolved.
+
+---
+
+## Outcome
+
+CyberScan Pro can now:
+
+* Accept a website URL
+* Connect to the target website
+* Analyze important HTTP security headers
+* Display a professional security analysis table
+
+This marks the first real cybersecurity scanning capability of the project.
+
+---
+
+## Git Commit
+
+Day 3: Implement HTTP security headers scanner
+
+---
+
+## Project Status
+
+Completed Successfully ✅
