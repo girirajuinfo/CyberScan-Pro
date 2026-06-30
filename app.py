@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import requests
+from scanner.headers import check_security_headers
 
 app = Flask(__name__)
 
@@ -15,11 +16,13 @@ def home():
         try:
 
             response = requests.get(website, timeout=5)
-
+            header_results = check_security_headers(website)
+            
             result = {
                 "website": website,
                 "status": response.status_code,
-                "message": "Website is Online"
+                "message": "Website is Online",
+                "headers": header_results
             }
 
         except requests.exceptions.MissingSchema:
@@ -41,10 +44,10 @@ def home():
         except requests.exceptions.Timeout:
 
             result = {
-        "website": website,
-        "status": "Error",
-        "message": "Request timed out. Website is taking too long to respond."
-    }
+               "website": website,
+                "status": "Error",
+                "message": "Request timed out. Website is taking too long to respond."
+            }
 
     return render_template("index.html", result=result)
 

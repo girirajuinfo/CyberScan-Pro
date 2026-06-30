@@ -67,6 +67,47 @@
 
 {% endif %}
 
+{% if result.headers %}
+
+<hr>
+
+<h3>Security Header Analysis</h3>
+
+<table border="1" cellpadding="10">
+
+    <tr>
+        <th>Security Header</th>
+        <th>Status</th>
+    </tr>
+
+    {% for header, status in result.headers.items() %}
+
+    <tr>
+
+        <td>{{ header }}</td>
+
+        <td>
+
+            {% if status == "Present" %}
+
+                ✅ Present
+
+            {% else %}
+
+                ❌ Missing
+
+            {% endif %}
+
+        </td>
+
+    </tr>
+
+    {% endfor %}
+
+</table>
+
+{% endif %}
+
 {% endif %}
 
 </section>
