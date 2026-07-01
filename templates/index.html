@@ -163,6 +163,63 @@
 </table>
 
 {% endif %}
+
+{% if result.robots %}
+
+<hr>
+
+<h3>Website Discovery Files</h3>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>File</th>
+    <th>Status</th>
+</tr>
+
+<tr>
+
+    <td>robots.txt</td>
+
+    <td>
+
+    {% if result.robots.robots %}
+
+        ✅ Found
+
+    {% else %}
+
+        ❌ Not Found
+
+    {% endif %}
+
+    </td>
+
+</tr>
+
+<tr>
+
+    <td>sitemap.xml</td>
+
+    <td>
+
+    {% if result.robots.sitemap %}
+
+        ✅ Found
+
+    {% else %}
+
+        ❌ Not Found
+
+    {% endif %}
+
+    </td>
+
+</tr>
+
+</table>
+
+{% endif %}
 {% endif %}
 
 </section>

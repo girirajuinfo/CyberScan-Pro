@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 import requests
 from scanner.headers import check_security_headers
 from scanner.ssl_checker import check_ssl_certificate
+from scanner.robots import check_robots_and_sitemap
 
 app = Flask(__name__)
 
@@ -19,15 +20,17 @@ def home():
             response = requests.get(website, timeout=5)
             header_results = check_security_headers(website)
             ssl_results = check_ssl_certificate(website)
+            robots_results = check_robots_and_sitemap(website)
 
             result = {
                 "website": website,
                 "status": response.status_code,
                 "message": "Website is Online",
                 "headers": header_results,
-                "ssl": ssl_results
+                "ssl": ssl_results,
+                "robots": robots_results
             }
-
+    
         except requests.exceptions.MissingSchema:
 
             result = {
