@@ -6,34 +6,33 @@ CyberScan Pro is a Python and Flask-based web application that performs automate
 
 ## 🚀 Project Status
 
-**Current Version:** v0.3
+**Current Version:** v0.5
 
-### Completed Features
+### ✅ Completed Features
 
-* ✅ Flask Web Application
-* ✅ Website Connectivity Scanner
-* ✅ HTTP Security Headers Scanner
-* ✅ URL Validation
-* ✅ Error Handling
-* ✅ Dynamic Scan Results
-* ✅ Modular Scanner Architecture
+- Flask Web Application
+- Website Connectivity Scanner
+- HTTP Security Headers Scanner
+- SSL Certificate Scanner
+- robots.txt Scanner
+- sitemap.xml Scanner
+- URL Validation
+- Error Handling
+- Dynamic Scan Results
+- Modular Scanner Architecture
 
 ---
 
-## 📋 Planned Features
+## 📋 Upcoming Features
 
-* HTTP Security Headers Scanner ✅
-* SSL Certificate Analysis
-* robots.txt Analysis
-* sitemap.xml Analysis
-* Open Port Scanner
-* WHOIS Information
-* DNS Information
-* Technology Detection
-* PDF Report Generation
-* Scan History
-* Dashboard
-* REST API
+- Port Scanner
+- WHOIS Information
+- DNS Information
+- Technology Detection
+- PDF Report Generation
+- Scan History
+- Dashboard
+- REST API
 
 ---
 
@@ -43,14 +42,15 @@ CyberScan Pro is a Python and Flask-based web application that performs automate
 CyberScan-Pro/
 │
 ├── app.py
-├── config.py
-├── requirements.txt
 ├── README.md
+├── requirements.txt
 ├── .gitignore
 │
 ├── scanner/
 │   ├── __init__.py
-│   └── headers.py
+│   ├── headers.py
+│   ├── ssl_checker.py
+│   └── robots.py
 │
 ├── templates/
 │   ├── base.html
@@ -60,11 +60,12 @@ CyberScan-Pro/
 │   └── css/
 │       └── style.css
 │
+├── docs/
+│   └── Project_Diary.md
+│
 ├── reports/
-├── database/
 ├── screenshots/
-└── docs/
-    └── Project_Diary.md
+└── database/
 ```
 
 ---
@@ -73,22 +74,24 @@ CyberScan-Pro/
 
 ### Backend
 
-* Python 3
-* Flask
-* Requests
+- Python 3
+- Flask
+- Requests
+- SSL
+- Socket
 
 ### Frontend
 
-* HTML5
-* CSS3
-* Jinja2
+- HTML5
+- CSS3
+- Jinja2
 
 ### Development Tools
 
-* Kali Linux
-* Visual Studio Code
-* Git
-* GitHub
+- Kali Linux
+- Visual Studio Code
+- Git
+- GitHub
 
 ---
 
@@ -138,9 +141,19 @@ http://127.0.0.1:5000
 
 ---
 
+## 🔍 Current Security Checks
+
+- Website Connectivity Check
+- HTTP Security Headers Analysis
+- SSL Certificate Verification
+- robots.txt Detection
+- sitemap.xml Detection
+
+---
+
 ## 📸 Screenshots
 
-Screenshots of the application will be added as development progresses.
+Screenshots will be added as development progresses.
 
 ---
 
@@ -148,30 +161,30 @@ Screenshots of the application will be added as development progresses.
 
 This project is designed to strengthen practical skills in:
 
-* Flask Web Development
-* Python Programming
-* HTTP Protocol
-* Web Application Security
-* Vulnerability Assessment
-* Secure Coding Practices
-* Git & GitHub Workflow
-* Software Project Architecture
+- Flask Web Development
+- Python Programming
+- HTTP Protocol
+- Web Application Security
+- Vulnerability Assessment & Penetration Testing (VAPT)
+- Secure Coding Practices
+- Git & GitHub Workflow
+- Software Project Architecture
 
 ---
 
 ## 📅 Development Progress
 
-* ✅ Day 0 – Project Setup
-* ✅ Day 1 – Flask Application & UI
-* ✅ Day 2 – Website Connectivity Scanner
-* ✅ Day 3 – HTTP Security Headers Scanner
-* 🔜 Day 4 – SSL Certificate Scanner
-* 🔜 Day 5 – robots.txt Scanner
-* 🔜 Day 6 – sitemap.xml Scanner
-* 🔜 Day 7 – Port Scanner
-* 🔜 Day 8 – PDF Report Generator
-* 🔜 Day 9 – Dashboard
-* 🔜 Day 10 – CyberScan Pro v1.0
+- ✅ Day 0 – Project Setup
+- ✅ Day 1 – Flask Application & UI
+- ✅ Day 2 – Website Connectivity Scanner
+- ✅ Day 3 – HTTP Security Headers Scanner
+- ✅ Day 4 – SSL Certificate Scanner
+- ✅ Day 5 – robots.txt & sitemap.xml Scanner
+- 🔜 Day 6 – Port Scanner
+- 🔜 Day 7 – Technology Detection
+- 🔜 Day 8 – PDF Report Generator
+- 🔜 Day 9 – Dashboard & Report History
+- 🔜 Day 10 – CyberScan Pro v1.0
 
 ---
 
@@ -179,11 +192,31 @@ This project is designed to strengthen practical skills in:
 
 **Giriraju C M**
 
-* GitHub: https://github.com/girirajuinfo
-* LinkedIn: https://www.linkedin.com/in/giriraju-c-m/
+- GitHub: https://github.com/girirajuinfo
+- LinkedIn: https://www.linkedin.com/in/giriraju-c-m/
 
 ---
 
 ## 📄 License
 
 This project is developed for educational and learning purposes.
+
+---
+
+## 🚀 Future Roadmap
+
+- Port Scanner
+- DNS Lookup
+- WHOIS Lookup
+- Technology Detection
+- PDF Report Generation
+- Dashboard
+- Scan History
+- REST API
+- Export Scan Results
+
+---
+
+## 📌 Version
+
+**CyberScan Pro v0.5**

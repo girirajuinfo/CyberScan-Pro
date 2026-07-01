@@ -495,3 +495,122 @@ Implemented SSL certificate analysis to verify HTTPS configuration and certifica
 ## Result
 
 CyberScan Pro can now verify SSL certificates, display the certificate issuer, expiry date, remaining validity period, and certificate status.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+# 📅 Day 5 – robots.txt & sitemap.xml Scanner
+
+**Date:** 01 July 2026
+
+## Objective
+
+The objective of Day 5 was to implement website discovery file scanning by checking the availability of robots.txt and sitemap.xml files.
+
+---
+
+## Work Completed
+
+### 1. Created robots.py Module
+
+Created a dedicated scanner module named `robots.py` inside the `scanner` package.
+
+---
+
+### 2. Implemented robots.txt Scanner
+
+Developed functionality to automatically check whether the target website contains a robots.txt file.
+
+Example:
+
+https://example.com/robots.txt
+
+The scanner reports whether the file exists.
+
+---
+
+### 3. Implemented sitemap.xml Scanner
+
+Developed functionality to automatically check whether the target website contains a sitemap.xml file.
+
+Example:
+
+https://example.com/sitemap.xml
+
+The scanner reports whether the file exists.
+
+---
+
+### 4. Integrated Scanner with Flask
+
+Imported the robots scanner into `app.py`.
+
+Executed the scanner automatically after successful website connectivity and SSL analysis.
+
+Stored the results inside the result dictionary.
+
+---
+
+### 5. Updated Frontend
+
+Added a new section named **Website Discovery Files**.
+
+Displayed:
+
+- robots.txt Status
+- sitemap.xml Status
+
+using a dynamic HTML table.
+
+---
+
+## Files Modified
+
+- app.py
+- scanner/robots.py
+- templates/index.html
+
+---
+
+## Concepts Learned
+
+- Website Reconnaissance
+- robots.txt
+- sitemap.xml
+- URL Parsing
+- Dynamic URL Generation
+- HTTP Requests
+- Flask Module Integration
+- Dynamic HTML Rendering
+
+---
+
+## Challenges Faced
+
+- Constructing robots.txt and sitemap.xml URLs.
+- Integrating multiple scanner modules.
+- Displaying dynamic scan results.
+
+Successfully resolved all issues.
+
+---
+
+## Result
+
+CyberScan Pro can now:
+
+- Detect robots.txt
+- Detect sitemap.xml
+- Display website discovery information
+- Perform multiple security checks from a single scan
+
+---
+
+## Git Commit
+
+Day 5: Implement robots.txt and sitemap.xml scanner
+
+---
+
+## Project Status
+
+Completed Successfully ✅
