@@ -454,3 +454,44 @@ Day 3: Implement HTTP security headers scanner
 ## Project Status
 
 Completed Successfully ✅
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+# Day 4 – SSL Certificate Scanner
+
+## Objective
+
+Implemented SSL certificate analysis to verify HTTPS configuration and certificate validity.
+
+## Tasks Completed
+
+- Created ssl_checker.py module
+- Used Python ssl library
+- Used socket module for secure connections
+- Retrieved SSL certificate from target website
+- Extracted certificate issuer
+- Extracted certificate expiry date
+- Calculated remaining validity period
+- Displayed SSL analysis in Flask interface
+- Integrated SSL scanner into app.py
+- Updated HTML template to show SSL details
+
+## Files Modified
+
+- app.py
+- scanner/ssl_checker.py
+- templates/index.html
+
+## Concepts Learned
+
+- SSL/TLS
+- HTTPS
+- X.509 Certificates
+- socket module
+- ssl module
+- datetime calculations
+- Modular programming
+
+## Result
+
+CyberScan Pro can now verify SSL certificates, display the certificate issuer, expiry date, remaining validity period, and certificate status.
