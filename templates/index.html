@@ -108,6 +108,61 @@
 
 {% endif %}
 
+{% if result.ssl %}
+
+<hr>
+
+<h3>SSL Certificate Analysis</h3>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Property</th>
+    <th>Value</th>
+</tr>
+
+<tr>
+    <td>SSL Enabled</td>
+    <td>✅ Yes</td>
+</tr>
+
+<tr>
+    <td>Issuer</td>
+    <td>{{ result.ssl.issuer }}</td>
+</tr>
+
+<tr>
+    <td>Expiry Date</td>
+    <td>{{ result.ssl.expiry }}</td>
+</tr>
+
+<tr>
+    <td>Days Remaining</td>
+    <td>{{ result.ssl.days_left }}</td>
+</tr>
+
+<tr>
+    <td>Certificate Status</td>
+
+    <td>
+
+    {% if result.ssl.valid %}
+
+        <span style="color:green;">✅ Valid</span>
+
+    {% else %}
+
+        <span style="color:red;">❌ Expired</span>
+
+    {% endif %}
+
+    </td>
+
+</tr>
+
+</table>
+
+{% endif %}
 {% endif %}
 
 </section>
