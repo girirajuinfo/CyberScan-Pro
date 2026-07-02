@@ -4,6 +4,7 @@ from scanner.headers import check_security_headers
 from scanner.ssl_checker import check_ssl_certificate
 from scanner.robots import check_robots_and_sitemap
 from scanner.ports import scan_ports
+from scanner.technology import detect_technology
 
 app = Flask(__name__)
 
@@ -23,6 +24,7 @@ def home():
             ssl_results = check_ssl_certificate(website)
             robots_results = check_robots_and_sitemap(website)
             port_results = scan_ports(website)
+            technology_results = detect_technology(website)
 
             result = {
                 "website": website,
@@ -31,8 +33,9 @@ def home():
                 "headers": header_results,
                 "ssl": ssl_results,
                 "robots": robots_results,
-                "ports": port_results
-            }
+                "ports": port_results,
+                "technology": technology_results
+        }
     
         except requests.exceptions.MissingSchema:
 

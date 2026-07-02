@@ -245,6 +245,33 @@
 
 </table>
 
+
+{% endif %}
+{% if result.technology %}
+
+<hr>
+
+<h3>Technology Detection</h3>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Technology</th>
+    <th>Value</th>
+</tr>
+
+<tr>
+    <td>Server</td>
+    <td>{{ result.technology.server }}</td>
+</tr>
+
+<tr>
+    <td>X-Powered-By</td>
+    <td>{{ result.technology.powered_by }}</td>
+</tr>
+
+</table>
+
 {% endif %}
 {% endif %}
 
