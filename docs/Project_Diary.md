@@ -746,3 +746,110 @@ Day 6: Implement port scanner
 ## Project Status
 
 Completed Successfully ✅
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+# 📅 Day 7 – Technology Detection
+
+**Date:** 02 July 2026
+
+## Objective
+
+The objective of Day 7 was to implement Technology Detection to identify web server information and technologies used by the target website.
+
+---
+
+## Work Completed
+
+### 1. Created technology.py Module
+
+Created a dedicated scanner module named `technology.py` inside the `scanner` package.
+
+---
+
+### 2. Implemented Technology Detection
+
+Developed functionality to retrieve HTTP response headers using the Requests library.
+
+Extracted:
+
+- Server
+- X-Powered-By
+
+information from the HTTP response.
+
+---
+
+### 3. Integrated Scanner with Flask
+
+Imported the technology scanner into `app.py`.
+
+Executed the scanner after all previous security modules.
+
+Stored the detected technology information inside the result dictionary.
+
+---
+
+### 4. Updated Frontend
+
+Added a new section named **Technology Detection**.
+
+Displayed:
+
+- Server
+- X-Powered-By
+
+using a dynamic HTML table.
+
+---
+
+## Files Modified
+
+- app.py
+- scanner/technology.py
+- templates/index.html
+
+---
+
+## Concepts Learned
+
+- Technology Fingerprinting
+- HTTP Response Headers
+- Server Identification
+- Requests Library
+- Dictionary Handling
+- Exception Handling
+- Flask Module Integration
+
+---
+
+## Challenges Faced
+
+- Understanding HTTP response headers.
+- Handling websites that hide technology information.
+- Displaying technology details dynamically.
+
+Successfully resolved all issues.
+
+---
+
+## Result
+
+CyberScan Pro can now:
+
+- Detect the web server
+- Detect X-Powered-By information
+- Perform technology fingerprinting
+- Combine technology detection with previous security modules
+
+---
+
+## Git Commit
+
+Day 7: Implement technology detection
+
+---
+
+## Project Status
+
+Completed Successfully ✅

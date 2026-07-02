@@ -6,7 +6,7 @@ CyberScan Pro is a Python and Flask-based web application that performs automate
 
 ## 🚀 Project Status
 
-**Current Version:** v0.5
+**Current Version:** v0.7
 
 ### ✅ Completed Features
 
@@ -16,6 +16,8 @@ CyberScan Pro is a Python and Flask-based web application that performs automate
 - SSL Certificate Scanner
 - robots.txt Scanner
 - sitemap.xml Scanner
+- Port Scanner
+- Technology Detection
 - URL Validation
 - Error Handling
 - Dynamic Scan Results
@@ -25,14 +27,13 @@ CyberScan Pro is a Python and Flask-based web application that performs automate
 
 ## 📋 Upcoming Features
 
-- Port Scanner
+- PDF Report Generation
 - WHOIS Information
 - DNS Information
-- Technology Detection
-- PDF Report Generation
 - Scan History
 - Dashboard
 - REST API
+- Export Scan Results
 
 ---
 
@@ -50,7 +51,9 @@ CyberScan-Pro/
 │   ├── __init__.py
 │   ├── headers.py
 │   ├── ssl_checker.py
-│   └── robots.py
+│   ├── robots.py
+│   ├── ports.py
+│   └── technology.py
 │
 ├── templates/
 │   ├── base.html
@@ -148,6 +151,8 @@ http://127.0.0.1:5000
 - SSL Certificate Verification
 - robots.txt Detection
 - sitemap.xml Detection
+- Common Port Scanning
+- Technology Detection
 
 ---
 
@@ -180,10 +185,10 @@ This project is designed to strengthen practical skills in:
 - ✅ Day 3 – HTTP Security Headers Scanner
 - ✅ Day 4 – SSL Certificate Scanner
 - ✅ Day 5 – robots.txt & sitemap.xml Scanner
-- 🔜 Day 6 – Port Scanner
-- 🔜 Day 7 – Technology Detection
+- ✅ Day 6 – Port Scanner
+- ✅ Day 7 – Technology Detection
 - 🔜 Day 8 – PDF Report Generator
-- 🔜 Day 9 – Dashboard & Report History
+- 🔜 Day 9 – Dashboard & Scan History
 - 🔜 Day 10 – CyberScan Pro v1.0
 
 ---
@@ -205,18 +210,18 @@ This project is developed for educational and learning purposes.
 
 ## 🚀 Future Roadmap
 
-- Port Scanner
-- DNS Lookup
-- WHOIS Lookup
-- Technology Detection
-- PDF Report Generation
+- PDF Security Report Generation
 - Dashboard
 - Scan History
+- WHOIS Lookup
+- DNS Lookup
 - REST API
 - Export Scan Results
+- User Authentication
+- Dark Mode Interface
 
 ---
 
 ## 📌 Version
 
-**CyberScan Pro v0.5**
+**CyberScan Pro v0.7**
