@@ -220,6 +220,32 @@
 </table>
 
 {% endif %}
+
+{% if result.ports %}
+
+<hr>
+
+<h3>Open Port Scan</h3>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Port</th>
+    <th>Service</th>
+</tr>
+
+{% for port, service in result.ports.items() %}
+
+<tr>
+    <td>{{ port }}</td>
+    <td>{{ service }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endif %}
 {% endif %}
 
 </section>

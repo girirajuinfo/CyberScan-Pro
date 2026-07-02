@@ -3,6 +3,7 @@ import requests
 from scanner.headers import check_security_headers
 from scanner.ssl_checker import check_ssl_certificate
 from scanner.robots import check_robots_and_sitemap
+from scanner.ports import scan_ports
 
 app = Flask(__name__)
 
@@ -21,6 +22,7 @@ def home():
             header_results = check_security_headers(website)
             ssl_results = check_ssl_certificate(website)
             robots_results = check_robots_and_sitemap(website)
+            port_results = scan_ports(website)
 
             result = {
                 "website": website,
@@ -28,7 +30,8 @@ def home():
                 "message": "Website is Online",
                 "headers": header_results,
                 "ssl": ssl_results,
-                "robots": robots_results
+                "robots": robots_results,
+                "ports": port_results
             }
     
         except requests.exceptions.MissingSchema:
