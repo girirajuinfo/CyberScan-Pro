@@ -614,3 +614,135 @@ Day 5: Implement robots.txt and sitemap.xml scanner
 ## Project Status
 
 Completed Successfully ✅
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+# 📅 Day 6 – Port Scanner
+
+**Date:** 02 July 2026
+
+## Objective
+
+The objective of Day 6 was to implement a Port Scanner that identifies commonly used open network ports on a target website.
+
+---
+
+## Work Completed
+
+### 1. Created ports.py Module
+
+Created a dedicated scanner module named `ports.py` inside the `scanner` package.
+
+---
+
+### 2. Implemented Common Port Scanner
+
+Developed a TCP port scanner using Python's `socket` module.
+
+The scanner checks the following common ports:
+
+- 21 (FTP)
+- 22 (SSH)
+- 25 (SMTP)
+- 53 (DNS)
+- 80 (HTTP)
+- 110 (POP3)
+- 143 (IMAP)
+- 443 (HTTPS)
+- 3306 (MySQL)
+- 3389 (RDP)
+
+---
+
+### 3. Used URL Parsing
+
+Extracted the hostname from the user-provided URL using `urlparse()` before scanning the target.
+
+Example:
+
+https://google.com
+
+↓
+
+Hostname:
+
+google.com
+
+---
+
+### 4. Performed TCP Connection Checks
+
+Used `socket.connect_ex()` to determine whether each port is open or closed.
+
+Open ports were stored for display.
+
+---
+
+### 5. Integrated Scanner with Flask
+
+Imported the port scanner into `app.py`.
+
+Executed the scanner after the website connectivity, security header, SSL certificate, and website discovery scans.
+
+Stored the scan results inside the result dictionary.
+
+---
+
+### 6. Updated Frontend
+
+Added a new section named **Open Port Scan**.
+
+Displayed the detected open ports and their corresponding services using a dynamic HTML table.
+
+---
+
+## Files Modified
+
+- app.py
+- scanner/ports.py
+- templates/index.html
+
+---
+
+## Concepts Learned
+
+- TCP/IP Networking
+- Socket Programming
+- TCP Port Scanning
+- Common Network Services
+- URL Parsing
+- Flask Module Integration
+- Dynamic HTML Rendering
+
+---
+
+## Challenges Faced
+
+- Extracting the hostname from URLs.
+- Performing TCP connections with timeouts.
+- Displaying dynamic port scan results.
+
+Successfully resolved all issues.
+
+---
+
+## Result
+
+CyberScan Pro can now:
+
+- Scan common TCP ports
+- Identify open network services
+- Display open ports with service names
+- Perform multiple security checks from a single scan
+
+---
+
+## Git Commit
+
+Day 6: Implement port scanner
+
+---
+
+## Project Status
+
+Completed Successfully ✅
